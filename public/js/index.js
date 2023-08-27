@@ -20,9 +20,7 @@ if (resetPassForm)
   resetPassForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const url = window.location.href.split('/');
-    console.log(url);
     const token = url.slice(-1);
-    console.log(token);
     const password = document.getElementById('password').value;
     const passwordConfirm = document.getElementById('passwordConfirm').value;
     resetPass(password, passwordConfirm, token);

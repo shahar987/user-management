@@ -49,6 +49,8 @@ app.use(mongoSanitize());
 // Data sanitization against XSS
 app.use(xss());
 
+app.use(compression())
+
 //ROUTES
 app.use('/', viewRouter);
 app.use('/api/v1/users', userRouter);
